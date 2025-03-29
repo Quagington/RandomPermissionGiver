@@ -1,0 +1,29 @@
+name: RandomPermissions
+version: ${full.version}
+api-version: 1.21
+
+main: io.quagmire.randompermissions.RandomPermissionsPlugin
+
+depends: [Core]
+softdepend: [PlaceholderAPI]
+
+folia-supported: true
+
+commands:
+  randompermissions:
+    description: Random Permissions Command
+    permission: randompermissions.command
+    aliases:
+      - randomperms
+      - rp
+
+permissions:
+  randompermissions.command:
+    description: Allows the player to use the Random Permissions command
+    default: op
+  randompermissions.reload:
+    description: Allows the player to reload the Random Permissions plugin
+    default: op
+  randompermissions.issue:
+    description: Allows the player to issue a Random Permissions command
+    default: op
